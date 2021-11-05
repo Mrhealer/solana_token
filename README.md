@@ -1,6 +1,16 @@
 
 ###
-Create Token on Solana
+## Create Token on Solana
+<!-- Menu -->
+## Menu
+- [x] Setup environment
+- [x] Setup Devnet Solana
+- [x] Create Token on the Solana
+- [] Create token suply
+- [] Create NFT on the Solana(next update)
+- [x] Create smart contract with rust(next update)
+- [x] Deploy smart contract on the Solana(next update)
+
 ### I.Setup environment
 Install Rust
 ```
@@ -27,8 +37,7 @@ solana --version
 
 Install Phantom extention on the chrome.
 
-## Markdown
-Setup dev net
+## II.Setup dev net
 
 Run get config
 ```
@@ -91,7 +100,7 @@ solana airdrop 1 APcbZMi7ukMP2oMZoYSYpkZbgGjTAurumXnrDj1WFD79 --url https://api.
 ```
 balance of key is 1 SOL
 
-You can check on
+## III.Solana Explorer
 
 https://explorer.solana.com/
 
@@ -102,15 +111,16 @@ please choose "devnet" for check address
 add wallet address to phantom extention
 
 - Open my-key.json on folder WalletSolana.
+
 ![Alt text](key_json.png "Title")
 
 
-Import wallet
+Import wallet on Phantom extention
 
 ![Alt text](import_wallet.png "Title")
 
 
-Wallet UI
+Extention will show SOL Dev net
 
 ![Alt text](wallet_ui.png "Title")
 
@@ -129,7 +139,6 @@ if keypair not correct. please set config for it.
  solana config set --keypair Documents/Solana/walletsol/my_key.json
 ```
 
-
 Create Token
 ```
 spl-token create-token
@@ -143,9 +152,8 @@ Creating token 3poT2GxSZoesjhqZ177QegS7DYgnqCW7aY8qFW4JybdN
 Signature: 3rfcL9fTRfGb6oo5WvsCmucBiC9azh2SGjEYosmDhfYTCHpAeMMSqfsjSWJLGXiU2k6pExejHyMVyx2KJmfPhQuZ
 ```
 
-that is smartcontract addresses
+That is case create a Token on the Solana
 
-Smart Contract address
 ![Alt text](smart_contract.png "Title")
 
 Create Suply.
@@ -155,15 +163,21 @@ Create Suply.
 spl-token create-account 3poT2GxSZoesjhqZ177QegS7DYgnqCW7aY8qFW4JybdN
 ```
 
-mint balanace to smart contractr
+mint balanace token on the Solana
 
 ```
 spl-token mint 6gYTX8XqMtshhGY6Us4dxszB9TDxVBg5ePiV75kLE1tW 1000
 ```
 
-Check smart contract on explorer
+Check token on explorer
 
-//
-
+```
 only mint 100k token
 spl-token authorize 3poT2GxSZoesjhqZ177QegS7DYgnqCW7aY8qFW4JybdN mint --disable
+```
+
+It will fixed only 100k token
+
+
+Continue
+===============================================
